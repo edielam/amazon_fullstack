@@ -20,6 +20,7 @@
             </header>
             <aside class="sidebar">
                 <h3>Shopping Categories</h3>
+                <button class="sidebar-close-button" onclick="closeMenu()">x</button>
                 <ul>
                     <li>
                         <a href="index.html">Pants</a>
@@ -121,7 +122,10 @@
         </div>
         <script>
             function openMenu(){
-                document.querySelector(".sidebar").classList.add(open);
+                document.querySelector(".sidebar").classList.add("open");
+            }
+            function closeMenu(){
+                document.querySelector(".sidebar").classList.remove("open");
             }
         </script>
     </body>
