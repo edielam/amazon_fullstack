@@ -1,12 +1,21 @@
-import logo from './logo.svg';
+import data from './data';
 import './App.css';
-
+import HomeScreen from './Screens/HomeScreen';
+import ProductScreen from './Screens/ProductScreen';
+import {BrowserRouter, Route} from 'react-router-dom';
 function App() {
+    const openMenu =  () =>{
+        document.querySelector(".sidebar").classList.add("open");
+    }
+    const closeMenu =  () =>{
+        document.querySelector(".sidebar").classList.remove("open");
+    }
   return (
+    <BrowserRouter>  
     <div className="grid-container"> 
             <header className="header">
                 <div className="brand">
-                    <button onclick="openMenu()">
+                    <button onClick={openMenu}>
                         &#9776;
                     </button>
                     <a href="index.html">Camazon</a>
@@ -18,7 +27,7 @@ function App() {
             </header>
             <aside className="sidebar">
                 <h3>Shopping Categories</h3>
-                <button className="sidebar-close-button" onclick="closeMenu()">x</button>
+                <button className="sidebar-close-button" onClick={closeMenu}>x</button>
                 <ul>
                     <li>
                         <a href="index.html">Pants</a>
@@ -30,87 +39,22 @@ function App() {
             </aside>
             <main className="main">
                 <div className="content">
+                    <Route path = "/products/:id" component={ProductScreen}/>
+                    <Route path = "/" exact={true} component={HomeScreen}/>
                     <ul className="products">
-                        <li>
-                            <div className="product">
-                                <img className="product-image" src="/images/d3.jpg" alt="product"/>
-                                <div className="product-name">
-                                    <a href="products.html">Slim Shirt</a></div>
-                                <div className="product-brand">Nike</div>
-                                <div className="product-price">GHS 500</div>
-                                <div className="product-rating">4.5 Stars(10 reviews)</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="product">
-                                <img className="product-image" src="/images/d3.jpg" alt="product"/>
-                                <div className="product-name">
-                                    <a href="products.html">Slim Shirt</a></div>
-                                <div className="product-brand">Nike</div>
-                                <div className="product-price">GHS 500</div>
-                                <div className="product-rating">4.5 Stars(10 reviews)</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="product">
-                                <img className="product-image" src="/images/d3.jpg" alt="product"/>
-                                <div className="product-name">
-                                    <a href="products.html">Slim Shirt</a></div>
-                                <div className="product-brand">Nike</div>
-                                <div className="product-price">GHS 500</div>
-                                <div className="product-rating">4.5 Stars(10 reviews)</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="product">
-                                <img className="product-image" src="/images/d3.jpg" alt="product"/>
-                                <div className="product-name">
-                                    <a href="products.html">Slim Shirt</a></div>
-                                <div className="product-brand">Nike</div>
-                                <div className="product-price">GHS 500</div>
-                                <div className="product-rating">4.5 Stars(10 reviews)</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="product">
-                                <img className="product-image" src="/images/d3.jpg" alt="product"/>
-                                <div className="product-name">
-                                    <a href="products.html">Slim Shirt</a></div>
-                                <div className="product-brand">Nike</div>
-                                <div className="product-price">GHS 500</div>
-                                <div className="product-rating">4.5 Stars(10 reviews)</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="product">
-                                <img className="product-image" src="/images/d3.jpg" alt="product"/>
-                                <div className="product-name">
-                                    <a href="products.html">Slim Shirt</a></div>
-                                <div className="product-brand">Nike</div>
-                                <div className="product-price">GHS 500</div>
-                                <div className="product-rating">4.5 Stars(10 reviews)</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="product">
-                                <img className="product-image" src="/images/d3.jpg" alt="product"/>
-                                <div className="product-name">
-                                    <a href="products.html">Slim Shirt</a></div>
-                                <div className="product-brand">Nike</div>
-                                <div className="product-price">GHS 500</div>
-                                <div className="product-rating">4.5 Stars(10 reviews)</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="product">
-                                <img className="product-image" src="/images/d3.jpg" alt="product"/>
-                                <div className="product-name">
-                                    <a href="products.html">Slim Shirt</a></div>
-                                <div className="product-brand">Nike</div>
-                                <div className="product-price">GHS 500</div>
-                                <div className="product-rating">4.5 Stars(10 reviews)</div>
-                            </div>
-                        </li>
+                        {
+                            data.products.map(product => 
+                                <li>
+                                    <div className="product">
+                                        <img className="product-image" src="/images/d3.jpg" alt="product"/>
+                                        <div className="product-name">
+                                            <a href="products.html">{product.name}</a></div>
+                                        <div className="product-brand">{product.brand}</div>
+                                        <div className="product-price">GHS {product.price}</div>
+                                        <div className="product-rating">{product.rating}</div>
+                                    </div>
+                                </li>)
+                        }
                     </ul>
                 </div>
             </main>
@@ -118,6 +62,7 @@ function App() {
                 All rights reserved
             </footer>
         </div>
+        </BrowserRouter>
   );
 }
 
