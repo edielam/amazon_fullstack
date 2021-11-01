@@ -1,9 +1,9 @@
-export default {
+const Data = {
     products:[{
         _id: 1,
         name: 'Slim Shirt',
         category: 'Shirt',
-        image: '/images/d1.jpg',
+        image: '/images/d3.jpg',
         price: 500,
         brand: 'Nike',
         rating: '4.5',
@@ -11,9 +11,9 @@ export default {
     },
     {
         _id: 2,
-        name: 'Slim Shirt',
+        name: 'Fit Shirt',
         category: 'Shirt',
-        image: '/images/d1.jpg',
+        image: '/images/d3.jpg',
         price: 500,
         brand: 'Nike',
         rating: '4.5',
@@ -21,29 +21,29 @@ export default {
     },
     {
         _id: 3,
-        name: 'Slim Shirt',
+        name: 'mango Shirt',
         category: 'Shirt',
-        image: '/images/d1.jpg',
-        price: 500,
+        image: '/images/d3.jpg',
+        price: 50,
         brand: 'Nike',
-        rating: '4.5',
+        rating: '4.0',
         numReviews: 10
     },
     {
         _id: 4,
-        name: 'Slim Shirt',
+        name: 'Brown Shirt',
         category: 'Shirt',
-        image: '/images/d1.jpg',
-        price: 500,
+        image: '/images/d3.jpg',
+        price: 800,
         brand: 'Nike',
-        rating: '4.5',
+        rating: '3.5',
         numReviews: 10
     },
     {
         _id: 5,
-        name: 'Slim Shirt',
+        name: 'muy Shirt',
         category: 'Shirt',
-        image: '/images/d1.jpg',
+        image: '/images/d3.jpg',
         price: 500,
         brand: 'Nike',
         rating: '4.5',
@@ -51,9 +51,9 @@ export default {
     },
     {
         _id: 6,
-        name: 'Slim Shirt',
+        name: 'woman Shirt',
         category: 'Shirt',
-        image: '/images/d1.jpg',
+        image: '/images/d3.jpg',
         price: 500,
         brand: 'Nike',
         rating: '4.5',
@@ -61,9 +61,9 @@ export default {
     },
     {
         _id:7,
-        name: 'Slim Shirt',
+        name: 'muyxs Shirt',
         category: 'Shirt',
-        image: '/images/d1.jpg',
+        image: '/images/d3.jpg',
         price: 500,
         brand: 'Nike',
         rating: '4.5',
@@ -71,9 +71,9 @@ export default {
     },
     {
         _id: 8,
-        name: 'Slim Shirt',
+        name: 'man Shirt',
         category: 'Shirt',
-        image: '/images/d1.jpg',
+        image: '/images/d3.jpg',
         price: 500,
         brand: 'Nike',
         rating: '4.5',
@@ -81,3 +81,5 @@ export default {
     }
 ]
 }
+
+export default Data;
