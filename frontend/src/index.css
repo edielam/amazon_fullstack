@@ -133,3 +133,59 @@ a:hover{
   right: 0.5rem;
   top: 1.5rem;   
 }
+/* Product details */
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.details-image {
+  flex: 2 1 60rem;
+}
+.details-image img {
+  max-width: 60rem;
+  width: 100%;
+}
+.details-info {
+  flex: 1 1 30rem;
+}
+.details-action {
+  flex: 1 1 30rem;
+}
+.details-info ul, .details-action ul{
+  list-style-type: none;
+  padding: 0;
+}
+.details-info li, .details-action li{
+  margin-bottom: 1rem;
+}
+.backtores {
+  padding: 1rem;
+}
+.details-action {
+  border: 0.1rem #808080 solid;
+  border-radius: 0.7rem;
+  background-color: rgb(197, 212, 207);
+  padding: 1rem;
+}
+.details-action ul li:last-child{
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  padding: 1rem;
+  border: 0.1rem #808080 solid;
+  cursor: pointer;
+  border-radius: 0.7rem;
+  background-color: #f0c040;
+}
+.button:hover{
+  border: 0.1rem #404040 solid;
+  border-width: 0.2rem;
+}
+/* .button.primary {
+  background-color: #f0c040;
+} */
