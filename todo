@@ -3,3 +3,15 @@ google chrome
 STEPS:
 1. Web template(html, css, javascript)
 2. create react app
+
+When creating a server
+npm init
+install express
+create server.js file
+move data.js 
+install dep using " npm install @babel/cli @babel/core @babel/node @babel/preset-env nodemon --save-dev
+because current express runs on es5
+"--save-dev flag required to save dep in the right object i package.json file
+run server command "node file.js" eg "node backend/server.js"
+change script object test to "start : "nodemon --watch backend --exec babel-node backend/server.js"
+so that npm start in the server will access and run the server file as well
