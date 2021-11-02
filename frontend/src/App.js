@@ -20,7 +20,7 @@ class App extends React.Component {
                         <button onClick={openMenu}>
                             &#9776;
                         </button>
-                        <Link to ="/">KLODIN</Link>
+                        <Link to ="/">klodin</Link>
                     </div>
                     <div className="header-links">
                         <a href="cart.html">Cart</a>

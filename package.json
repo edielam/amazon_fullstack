@@ -1,0 +1,22 @@
+{
+  "name": "klodin_fullstack",
+  "version": "1.0.0",
+  "description": "React &amp; NodeJS ecommerce project(MERN Stack)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edielam/amazon_fullstack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edielam/amazon_fullstack/issues"
+  },
+  "homepage": "https://github.com/edielam/amazon_fullstack#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
