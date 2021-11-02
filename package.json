@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/edielam/amazon_fullstack#readme",
   "dependencies": {
+    "axios": "^0.24.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
