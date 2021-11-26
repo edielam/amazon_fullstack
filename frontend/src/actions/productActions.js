@@ -8,17 +8,17 @@ const listProducts = () => async (dispatch) => {
         dispatch({type: PRODUCT_LIST_SUCCESS, payload: data});
         
     } catch (error) {
-        dispatch({type: PRODUCT_LIST_FAIL, payload:error.message})
+        dispatch({type: PRODUCT_LIST_FAIL, payload:error.message});
     }   
 }
 
 const detProduct = (productId) => async (dispatch) => {
     try {
         dispatch({type: PRODUCT_DET_REQUEST, payload: productId});
-        const {deta} = await axios.get("/api/products/" + productId);
-        dispatch({type: PRODUCT_DET_SUCCESS, payload: deta});
+        const {data} = await axios.get("/api/products/" + productId);
+        dispatch({type: PRODUCT_DET_SUCCESS, payload: data});
     } catch (error) {
-        dispatch({type: PRODUCT_DET_FAIL, payload:error.message})
+        dispatch({type: PRODUCT_DET_FAIL, payload:error.message});
     }
 }
 

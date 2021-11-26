@@ -3,6 +3,7 @@ import React, { useEffect} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { listProducts } from "../actions/productActions";
 
+
 function HomeScreen(props) {
 
     /*creating hooks for fetching data from api*/
@@ -15,7 +16,7 @@ function HomeScreen(props) {
         return () => {
             //
         };
-    }, [])
+    },[])
 
 
     return loading? <div>Loading...</div> :
