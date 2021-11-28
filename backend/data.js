@@ -7,7 +7,8 @@ const Data = {
         price: 500,
         brand: 'Nike',
         rating: '4.5',
-        numReviews: 10
+        numReviews: 10,
+        countInStock: 3
     },
     {
         _id: 2,
@@ -17,7 +18,8 @@ const Data = {
         price: 500,
         brand: 'Nike',
         rating: '4.5',
-        numReviews: 10
+        numReviews: 10,
+        countInStock: 30
     },
     {
         _id: 3,
@@ -27,7 +29,8 @@ const Data = {
         price: 50,
         brand: 'Nike',
         rating: '4.0',
-        numReviews: 10
+        numReviews: 10,
+        countInStock: 10
     },
     {
         _id: 4,
@@ -37,7 +40,8 @@ const Data = {
         price: 800,
         brand: 'Nike',
         rating: '3.5',
-        numReviews: 10
+        numReviews: 10,
+        countInStock: 100
     },
     {
         _id: 5,
@@ -57,7 +61,8 @@ const Data = {
         price: 500,
         brand: 'Nike',
         rating: '4.5',
-        numReviews: 10
+        numReviews: 10,
+        countInStock: 5
     },
     {
         _id:7,
@@ -67,7 +72,8 @@ const Data = {
         price: 500,
         brand: 'Nike',
         rating: '4.5',
-        numReviews: 10
+        numReviews: 10,
+        countInStock: 8
     },
     {
         _id: 8,
@@ -77,7 +83,8 @@ const Data = {
         price: 500,
         brand: 'Nike',
         rating: '4.5',
-        numReviews: 10
+        numReviews: 10,
+        countInStock: 50
     }
 ]
 }
